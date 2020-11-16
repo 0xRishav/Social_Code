@@ -1,11 +1,11 @@
 const express = require('express');
-const router = require('./routes');
+// const router = require('./routes');
 const app = express();
 const port = 8000;
 
 
 // use rountes from express
-app.get('/',require('./routes/index'));
+app.use('/',require('./routes'));
 
 
 
